@@ -23,10 +23,6 @@ public class Offerings {
 
 
     public static void generateOfferings() {
-        Courses.generateCourses();
-        Teachers.generateTeachers();
-        Rooms.generateRooms();
-
         HashMap<Courses, Integer> rates = offeringRates();
 
 

@@ -16,7 +16,6 @@ public class Rosters {
     }
 
     public static void generateRosters(){
-        Students.generateStudents();
         Random random = new Random();
 
         for (int i = 0; i < Students.arrStudents.size(); i++) {
@@ -36,6 +35,18 @@ public class Rosters {
             }
         }
         return acceptedOfferings;
+    }
+
+    public int getRoster_id() {
+        return roster_id;
+    }
+
+    public Students getStudent() {
+        return student;
+    }
+
+    public Offerings getOffering() {
+        return offering;
     }
 
     @Override

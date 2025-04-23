@@ -149,8 +149,6 @@ public class Courses {
     }
 
     public static void generateCourses() {
-        Departments.generateDepartments();
-        Designations.generateDesignations();
 
         for (int i = 0; i < courseStr.length; i++) {
             String courseName = courseStr[i].substring(courseStr[i].indexOf("|") + 1);

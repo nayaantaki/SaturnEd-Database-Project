@@ -18,7 +18,6 @@ public class Assignments {
     }
 
     public static void generateAssignments(){
-        Weights.generateWeights();
 
         for (int i = 0; i < Offerings.arrOfferings.size(); i++) {
             for (int j = 1; j < 13; j++) {
@@ -32,9 +31,12 @@ public class Assignments {
         }
     }
 
-
     public int getAssignment_id(){
         return assignment_id;
+    }
+
+    public Offerings getOffering() {
+        return offering;
     }
 
     @Override
