@@ -18,7 +18,6 @@ public class Assignments {
     }
 
     public static void generateAssignments(){
-        Offerings.generateOfferings();
         Weights.generateWeights();
 
         for (int i = 0; i < Offerings.arrOfferings.size(); i++) {

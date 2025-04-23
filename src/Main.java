@@ -25,10 +25,10 @@ public class Main {
 //        Courses.generateCourses();
 //        System.out.println(Courses.arrCourses);
 
-        Offerings.generateOfferings();
-//        System.out.println(Rosters.offeringsOccuringInAPeriod(10));
-        Rosters.generateRosters();
-        System.out.println(Rosters.arrRosters);
+//        Offerings.generateOfferings();
+////        System.out.println(Rosters.offeringsOccuringInAPeriod(10));
+//        Rosters.generateRosters();
+//        System.out.println(Rosters.arrRosters);
 
 
 
@@ -39,7 +39,8 @@ public class Main {
 
 //        System.out.println(Offerings.arrOfferings);
 
-//        Assignments.generateAssignments();
-//        System.out.println(Assignments.arrAssignments);
+        Offerings.generateOfferings();
+        Assignments.generateAssignments();
+        System.out.println(Assignments.arrAssignments);
     }
 }
