@@ -51,6 +51,6 @@ public class Rosters {
 
     @Override
     public String toString() {
-        return "INSERT INTO Rosters ( student_id, offering_id ) VALUES ( " + student.getStudent_id() + ", " + offering.getOffering_id() + " );\n";
+        return "INSERT INTO Rosters ( student_id, offering_id ) VALUES ( " + student.getStudent_id() + ", " + offering.getOffering_id() + " );";
     }
 }

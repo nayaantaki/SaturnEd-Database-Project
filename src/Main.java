@@ -29,20 +29,25 @@ public class Main {
         Teachers.generateTeachers();
 //        arrToTxt(Teachers.arrTeachers, "inserts/teachers.txt");
 
-//        Courses.generateCourses();
-////        System.out.println(Courses.arrCourses);
-//
-//        Offerings.generateOfferings();
-////        System.out.println(Offerings.arrOfferings);
-//
-//        Rosters.generateRosters();
-////        System.out.println(Rosters.arrRosters);
-//
-//        Assignments.generateAssignments();
-////        System.out.println(Assignments.arrAssignments);
-//
-//        Grades.generateGrades();
-////        System.out.println(Grades.arrGrades);
+
+        Courses.generateCourses();
+        arrToTxt(Courses.arrCourses, "inserts/courses.txt");
+
+
+        Offerings.generateOfferings();
+        arrToTxt(Offerings.arrOfferings, "inserts/offerings.txt");
+
+
+        Rosters.generateRosters();
+        arrToTxt(Rosters.arrRosters, "inserts/rosters.txt");
+
+
+        Assignments.generateAssignments();
+        arrToTxt(Assignments.arrAssignments, "inserts/assignments.txt");
+
+
+        Grades.generateGrades();
+        arrToTxt(Grades.arrGrades, "inserts/grades.txt");
     }
 
     public static void arrToTxt(ArrayList<?> arrayList, String filePath){

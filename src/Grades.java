@@ -54,6 +54,6 @@ public class Grades {
 
     @Override
     public String toString() {
-        return "INSERT INTO Grades (student_id, assignment_id, grade) VALUES ( " + student.getStudent_id() + ", " + assignment.getAssignment_id() + ", " + grade  + " );\n";
+        return "INSERT INTO Grades (student_id, assignment_id, grade) VALUES ( " + student.getStudent_id() + ", " + assignment.getAssignment_id() + ", " + grade  + " );";
     }
 }

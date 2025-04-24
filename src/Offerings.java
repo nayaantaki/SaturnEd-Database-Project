@@ -81,6 +81,6 @@ public class Offerings {
 
     @Override
     public String toString() {
-        return "INSERT INTO Offerings (offering_id, course_id, teacher_id, room_id, period) VALUES ( " + offering_id + ", " + course.getCourse_id() + ", " + teacher.getTeacher_id() + ", " + room.getRoom_id() + ", " + period + " ); \n";
+        return "INSERT INTO Offerings (offering_id, course_id, teacher_id, room_id, period) VALUES ( " + offering_id + ", " + course.getCourse_id() + ", " + teacher.getTeacher_id() + ", " + room.getRoom_id() + ", " + period + " );";
     }
 }

@@ -41,7 +41,7 @@ public class Assignments {
 
     @Override
     public String toString() {
-        return "INSERT INTO Assignments (assignment_id, name, weight_id, offering_id) VALUES ( " + assignment_id + ", '" + name + "', " + weight.getWeight_id() + ", " + offering.getOffering_id()  + "); \n";
+        return "INSERT INTO Assignments (assignment_id, name, weight_id, offering_id) VALUES ( " + assignment_id + ", '" + name + "', " + weight.getWeight_id() + ", " + offering.getOffering_id()  + ");";
     }
 }
 
