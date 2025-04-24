@@ -1,0 +1,10 @@
+INSERT INTO Departments (department_id, name) VALUES ( 1, 'English' );
+INSERT INTO Departments (department_id, name) VALUES ( 2, 'Social Studies' );
+INSERT INTO Departments (department_id, name) VALUES ( 3, 'Biology' );
+INSERT INTO Departments (department_id, name) VALUES ( 4, 'Chemistry' );
+INSERT INTO Departments (department_id, name) VALUES ( 5, 'Physics' );
+INSERT INTO Departments (department_id, name) VALUES ( 6, 'Mathematics' );
+INSERT INTO Departments (department_id, name) VALUES ( 7, 'World Languages' );
+INSERT INTO Departments (department_id, name) VALUES ( 8, 'CTE' );
+INSERT INTO Departments (department_id, name) VALUES ( 9, 'Visual & Performing Arts' );
+INSERT INTO Departments (department_id, name) VALUES ( 10, 'Physical Education & Health' );

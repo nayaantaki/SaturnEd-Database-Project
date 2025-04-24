@@ -1,39 +1,60 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
         Rooms.generateRooms();
-//        System.out.println(Rooms.arrRooms);
+//        arrToTxt(Rooms.arrRooms, "inserts/rooms.txt");
+
 
         Departments.generateDepartments();
-//        System.out.println(Departments.arrDepartments);
+//        arrToTxt(Departments.arrDepartments, "inserts/departments.txt");
+
 
         Designations.generateDesignations();
-//        System.out.println(Designations.arrDesignations);
+//        arrToTxt(Designations.arrDesignations, "inserts/designations.txt");
+
 
         Weights.generateWeights();
-//        System.out.println(Weights.arrWeights);
+//        arrToTxt(Weights.arrWeights, "inserts/weights.txt");
+
 
         Students.generateStudents();
-//        System.out.println(Students.arrStudents);
+//        arrToTxt(Students.arrStudents, "inserts/students.txt");
+
 
         Teachers.generateTeachers();
-//        System.out.println(Teachers.arrTeachers);
+//        arrToTxt(Teachers.arrTeachers, "inserts/teachers.txt");
 
-        Courses.generateCourses();
-//        System.out.println(Courses.arrCourses);
+//        Courses.generateCourses();
+////        System.out.println(Courses.arrCourses);
+//
+//        Offerings.generateOfferings();
+////        System.out.println(Offerings.arrOfferings);
+//
+//        Rosters.generateRosters();
+////        System.out.println(Rosters.arrRosters);
+//
+//        Assignments.generateAssignments();
+////        System.out.println(Assignments.arrAssignments);
+//
+//        Grades.generateGrades();
+////        System.out.println(Grades.arrGrades);
+    }
 
-        Offerings.generateOfferings();
-//        System.out.println(Offerings.arrOfferings);
+    public static void arrToTxt(ArrayList<?> arrayList, String filePath){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            for (int i = 0; i < arrayList.size(); i++) {
+                writer.write(arrayList.get(i).toString());
+                writer.newLine();
+            }
 
-        Rosters.generateRosters();
-//        System.out.println(Rosters.arrRosters);
-
-        Assignments.generateAssignments();
-//        System.out.println(Assignments.arrAssignments);
-
-        Grades.generateGrades();
-//        System.out.println(Grades.arrGrades);
+            System.out.println("File written successfully");
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        }
     }
 }

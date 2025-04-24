@@ -1,0 +1,2 @@
+INSERT INTO Weights (weight_id, weight) VALUES ( 1, 'Major Assessment' );
+INSERT INTO Weights (weight_id, weight) VALUES ( 2, 'Minor Assessment' );

@@ -328,7 +328,6 @@ public class Teachers {
     }
 
     public static void generateTeachers() {
-        Departments.generateDepartments();
         for (int i = 0; i < teachStr.length; i++) {
             String teacherName = teachStr[i].substring(teachStr[i].indexOf("|") + 1);
             String dept = teachStr[i].substring(0, teachStr[i].indexOf("|"));
@@ -347,6 +346,6 @@ public class Teachers {
 
     @Override
     public String toString() {
-        return "INSERT INTO Teachers (teacher_id, name, department_id) VALUES ( " + teacher_id + ", '" + name + "', " + department.getDepartment_id() + " ); \n";
+        return "INSERT INTO Teachers (teacher_id, name, department_id) VALUES ( " + teacher_id + ", '" + name + "', " + department.getDepartment_id() + " );";
     }
 }
